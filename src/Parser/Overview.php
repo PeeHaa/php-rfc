@@ -97,7 +97,7 @@ final class Overview
 
     private function getTitle(\DOMNode $hyperlinkNode): string
     {
-        return $hyperlinkNode->textContent;
+        return trim($hyperlinkNode->textContent);
     }
 
     private function getDescription(\DOMNode $hyperlinkNode): string
